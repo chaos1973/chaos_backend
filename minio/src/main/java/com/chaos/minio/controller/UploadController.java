@@ -2,6 +2,7 @@ package com.chaos.minio.controller;
 
 import com.chaos.minio.util.MinioUtil;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -19,7 +20,7 @@ import java.util.List;
  * @date: 2022/11/21 15:02
  * @version: 1.0
  */
-@Controller
+@Controller("zhangsan")
 public class UploadController {
     @Autowired
     MinioUtil minioUtil;
